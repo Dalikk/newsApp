@@ -1,3 +1,4 @@
+import { Montserrat_100Thin, Montserrat_600SemiBold } from '@expo-google-fonts/montserrat';
 import { BackHandler, StyleSheet} from 'react-native';
 
 export const gStyle = StyleSheet.create({
@@ -8,6 +9,6 @@ export const gStyle = StyleSheet.create({
     title: {
         fontSize: 20,
         color: '#333',
-        fontFamily: 'mt-bold'
+        fontFamily: 'Montserrat_600SemiBold'
     }
 })
