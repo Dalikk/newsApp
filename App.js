@@ -1,10 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet} from 'react-native';
-import { gStyle } from './styles/style';
 import AppLoading from 'expo-app-loading';
 import { useFonts, Montserrat_600SemiBold, Montserrat_300Light } from '@expo-google-fonts/montserrat';
-import Main from './components/Main'
+import MainStack from './navigate'
 
 export default function App() {
 
@@ -15,10 +13,10 @@ export default function App() {
 
   if (fontsLoaded){
     return (
-      <Main/>
+      <MainStack/>
     );
   } else 
-    return <AppLoading />;
+    return <AppLoading onError={console.warn}/>;
 }
 
 const styles = StyleSheet.create({
