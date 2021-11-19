@@ -1,4 +1,4 @@
-import { StyleSheet} from 'react-native';
+import { BackHandler, StyleSheet} from 'react-native';
 
 export const gStyle = StyleSheet.create({
     main: {
@@ -8,6 +8,6 @@ export const gStyle = StyleSheet.create({
     title: {
         fontSize: 20,
         color: '#333',
-        // fontFamily: ''
+        fontFamily: 'mt-bold'
     }
 })
